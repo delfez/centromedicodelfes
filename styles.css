@@ -1,0 +1,328 @@
+
+body{
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+header{
+    background-color: rgb(0, 32, 89);
+    height: 85px;
+    display: flex;
+    padding: 5px;
+    overflow: hidden;
+}
+footer{
+    background-color: rgb(0, 32, 89);
+    height: 50px;
+
+    
+}
+a{
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    margin-left: 0px;
+    gap: 100px;
+    margin:auto;
+}
+.hdr_logo{
+    height:110px;
+    margin: -7.5px 0px 15px 15px;
+    
+}
+.nav-icon img{
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.nav-icon:hover{
+    transform: scale(1.25)
+}
+.nav-icon{
+    background-color: white;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 7.5px;
+    transition: transform .5s ease;
+}
+.nav{
+    display: flex;
+
+}
+.nav-text{
+    font-size: 20px;
+    color: white;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.header1{
+    padding-bottom:15px ;
+}
+.header2{
+    display: flex;
+    gap: 50px;
+    margin:auto;
+    background-color: rgb(127, 162, 205);
+    margin-left: auto;
+    margin-right: auto;
+}
+.header2 div{
+    font-size: 20px;
+    color: white;
+    
+}
+.subheader{
+    margin: auto;
+    display: flex;
+    gap: 115px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 0px;
+
+}
+.slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+.slide{
+    width: 100%;
+    max-height: 575px;
+    display: none;
+    opacity: 65%;
+
+}
+img.displaySlide{
+    display: block;
+}
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size:25px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.previous{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+
+.slide-caption {
+    position: absolute;
+    bottom: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(0, 32, 89);
+    font-size: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 90%;
+}
+
+.slide-caption button {
+    position: absolute;
+    margin-top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background-color: rgb(0, 32, 89);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 100%;
+}
+
+.slide-caption button:hover {
+background-color: rgb(206, 224, 246);
+}
+.header1, .header2 a{
+       color: white;
+}
+.header1, .header2 a:visited{
+       color: white;
+}
+section h1{
+    font-size: 40px;
+    margin-top: 50px;
+    display: flex;
+    color: rgb(0, 32, 89);
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.especialidades{
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+}
+.especialidades img{
+    display: block;
+    width: 400px;
+   height: 300px;
+    border-radius: 5%;
+   object-fit: cover;
+}
+.especialidades div{
+    justify-content: center;
+}
+.especialidade{
+    justify-self: center;
+    font-size: 30px;
+    color: rgb(0, 32, 89);
+}
+.img-container {
+  position: relative;
+  display: inline-block;
+
+}
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  background-color: rgb(0, 32, 89);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  font-size: 1.3em;
+  text-align: center;
+  height: 85%;
+  border-radius: 5%;
+  margin: 10px;
+}
+.img-container:hover .overlay-text {
+  opacity: .9;
+}
+.overimg{
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    opacity: .9;
+}
+.about-text{
+    margin-left: 400px;
+    max-width: 500px;
+    letter-spacing: 1.5px;
+    line-height: 1.7;
+    margin-bottom: 50px;
+}
+.about-text h2{
+    color: rgb(0, 32, 89);
+}
+.about-text img{
+    position: absolute;
+    left: 1000px;
+    bottom: -30px;
+    height: 350px;
+    border: 3px solid rgb(0, 32, 89);
+    border-radius: 2%;
+    object-fit: cover;
+    
+}
+.corpus{
+    display: flex;
+    margin-left:250px ;
+}
+.corpus img{
+    object-fit: cover;
+    width: 300px;
+    max-height: 325px;
+    margin: 45px;
+    border-radius: 1%;
+}
+
+.biotext{
+    margin: 15px;
+    max-width: 900px;
+    letter-spacing: 0.7px;
+    font-size: 17px;
+    line-height: 1.2;
+}
+ul{
+    list-style: none;
+    text-decoration: none   ;
+    display: flex;
+}
+li{
+    letter-spacing: 0.7px;
+    font-size: 17px;
+    line-height: 1.2;
+    padding: 5px;
+}
+.enderecos{
+    display: flex;
+    flex-direction: column;
+    margin-left:250px ;
+    margin-top:50px ;
+    max-width: 500px;
+    min-height: 725px;
+    
+}
+.enderecos img{
+    height: 100px;
+    position: relative;
+    top: 15px;
+    left: 20px;
+
+}
+.enderecos a{
+    color: black;
+}
+.enderecos a:hover{
+    color: rgb(12, 0, 241);
+
+}
+.endereco1{
+    display: flex;
+    gap: 50px;
+}
+.maptext{
+    position: relative;
+    left: 5px;
+    bottom: -10px;
+    font-size:1.5em;
+}
+#map2{
+    margin-left: -30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
